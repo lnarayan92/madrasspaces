@@ -38,6 +38,12 @@ const Header = () => {
               PROJECTS
             </button>
             <button
+              onClick={() => scrollToSection("awards")}
+              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
+            >
+              AWARDS
+            </button>
+            <button
               onClick={() => scrollToSection("people")}
               className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
             >
@@ -75,6 +81,12 @@ const Header = () => {
                 className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
               >
                 PROJECTS
+              </button>
+              <button
+                onClick={() => scrollToSection("awards")}
+                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
+              >
+                AWARDS
               </button>
               <button
                 onClick={() => scrollToSection("people")}
