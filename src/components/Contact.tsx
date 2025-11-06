@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -23,6 +23,15 @@ const Contact = () => {
               >
                 <Mail className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 <span className="font-light">contact@madrasspaces.com</span>
+              </a>
+              <a
+                href="https://www.instagram.com/madras_spaces/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+              >
+                <Instagram className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                <span className="font-light">@madras_spaces</span>
               </a>
             </div>
           </div>

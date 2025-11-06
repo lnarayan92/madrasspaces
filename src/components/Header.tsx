@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -55,6 +55,14 @@ const Header = () => {
             >
               CONTACT
             </button>
+            <a
+              href="https://www.instagram.com/madras_spaces/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
           </nav>
 
           <Button

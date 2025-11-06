@@ -41,52 +41,63 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-12 tracking-tight">Projects</h2>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-16 tracking-tight">Projects</h2>
 
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        <Accordion type="single" collapsible className="w-full space-y-8">
           {projects.map((project) => (
-            <AccordionItem key={project.id} value={project.id} className="border rounded-lg px-6">
-              <AccordionTrigger className="text-2xl sm:text-3xl font-light hover:no-underline">
+            <AccordionItem key={project.id} value={project.id} className="border-none">
+              <AccordionTrigger className="text-xl sm:text-2xl font-light hover:no-underline py-6 border-t border-border hover:opacity-70 transition-opacity">
                 {project.title}
               </AccordionTrigger>
-              <AccordionContent>
-                <p className="text-lg sm:text-xl text-muted-foreground font-light mb-12">
-                  {project.subtitle}
-                </p>
+              <AccordionContent className="pt-8">
+                <div className="space-y-16">
+                  {/* Hero Image */}
+                  <div className="w-full aspect-[16/9] overflow-hidden bg-muted">
+                    <img
+                      src={project.images[0].src}
+                      alt={project.images[0].alt}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
 
-                <div className="grid md:grid-cols-2 gap-12 lg:gap-20 mb-16">
-                  <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
-                    {project.description.slice(0, 3).map((paragraph, index) => (
+                  {/* Subtitle */}
+                  <div className="max-w-2xl">
+                    <p className="text-lg sm:text-xl text-muted-foreground font-light italic">
+                      {project.subtitle}
+                    </p>
+                  </div>
+
+                  {/* Description */}
+                  <div className="max-w-3xl space-y-6 text-muted-foreground font-light leading-relaxed">
+                    {project.description.map((paragraph, index) => (
                       <p key={index}>{paragraph}</p>
                     ))}
                   </div>
-                  <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
-                    {project.description.slice(3).map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
+
+                  {/* Image Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                    {project.images.slice(1).map((image, index) => (
+                      <div
+                        key={index}
+                        className="aspect-[4/3] overflow-hidden bg-muted group cursor-pointer"
+                      >
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
                     ))}
                   </div>
-                </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
-                  {project.images.map((image, index) => (
-                    <div
-                      key={index}
-                      className="aspect-[4/5] overflow-hidden bg-muted group cursor-pointer"
-                    >
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="max-w-3xl">
-                  <p className="text-muted-foreground font-light leading-relaxed">
-                    {project.conclusion}
-                  </p>
+                  {/* Conclusion */}
+                  <div className="max-w-3xl pt-8 border-t border-border">
+                    <p className="text-muted-foreground font-light leading-relaxed italic">
+                      {project.conclusion}
+                    </p>
+                  </div>
                 </div>
               </AccordionContent>
             </AccordionItem>
