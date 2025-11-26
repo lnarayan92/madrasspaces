@@ -18,11 +18,18 @@ const Contact = () => {
                 <span className="font-light">+91 9042274103</span>
               </a>
               <a
-                href="mailto:contact@madrasspaces.com"
+                href="tel:+917338914133"
+                className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+              >
+                <Phone className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                <span className="font-light">+91 733 8914133</span>
+              </a>
+              <a
+                href="mailto:projects@madrasspaces.com"
                 className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
               >
                 <Mail className="h-5 w-5 group-hover:scale-110 transition-transform" />
-                <span className="font-light">contact@madrasspaces.com</span>
+                <span className="font-light">projects@madrasspaces.com</span>
               </a>
               <a
                 href="https://www.instagram.com/madras_spaces/?hl=en"
@@ -40,8 +47,8 @@ const Contact = () => {
             <h3 className="text-xl font-light mb-6">Location</h3>
             <div className="text-muted-foreground font-light space-y-2">
               <p>Madras Spaces</p>
-              <p>Chennai, Tamil Nadu</p>
-              <p>India</p>
+              <p>Thyagaraya Nagar, Chennai</p>
+              <p>Tamil Nadu, India 600017</p>
             </div>
           </div>
         </div>
