@@ -17,6 +17,16 @@ import nHouse08 from "@/assets/projects/n-house-08.jpg";
 import nHouse09 from "@/assets/projects/n-house-09.jpg";
 import nHouse10 from "@/assets/projects/n-house-10.jpg";
 import nHouse13 from "@/assets/projects/n-house-13.jpg";
+import brickHouse01 from "@/assets/projects/brick-house-01.jpg";
+import brickHouse02 from "@/assets/projects/brick-house-02.jpg";
+import brickHouse03 from "@/assets/projects/brick-house-03.jpg";
+import brickHouse04 from "@/assets/projects/brick-house-04.jpg";
+import brickHouse05 from "@/assets/projects/brick-house-05.jpg";
+import brickHouse06 from "@/assets/projects/brick-house-06.jpg";
+import brickHouse07 from "@/assets/projects/brick-house-07.jpg";
+import brickHouse08 from "@/assets/projects/brick-house-08.jpg";
+import brickHouse09 from "@/assets/projects/brick-house-09.jpg";
+import brickHouse10 from "@/assets/projects/brick-house-10.jpg";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Projects = () => {
@@ -68,6 +78,33 @@ const Projects = () => {
         { src: theFramedBlue, alt: "The Framed Blue - View perspective" },
         { src: throughLine, alt: "Through Line - Corridor design" },
         { src: tracesOfCalm, alt: "Traces of Calm - Textural detail" },
+      ],
+    },
+    {
+      id: "brick-house",
+      title: "Brick House",
+      subtitle: "A Sanctuary of Tranquility in Chennai's Outskirts",
+      description: [
+        "Nestled on a tight plot measuring 60'x40' in the outskirts of Chennai, Tamil Nadu, this 3BHK home stands as a testament to thoughtful design and the enduring harmony between nature and architecture. Designed to cater to the needs of a young couple, their child, and cherished pets, it offers a sanctuary of tranquility amidst the bustling urban life.",
+        "At the heart of this home is its expansive courtyard, ingeniously designed to breathe with changing qualities of light and breeze throughout the day. Crafted with the potential growth of neighboring homes in mind, the courtyard ensures privacy while inviting natural elements to enhance its charm.",
+        "A majestic neem tree stands tall on the outside of the site, on the north side, offering its protective shade and natural beauty. The large north-facing window, meticulously designed as an extension of the house, frames this picturesque view, seamlessly blending the outdoors with the indoors. It serves as a visual bridge between the family's living space and the serene presence of the neem tree, creating a sense of harmony and connection.",
+        "For the inhabitants, the neem tree has become more than just a natural element; it has become a cherished member of their family. Its sprawling branches provide shade and shelter, while its presence brings a sense of tranquility and continuity to their lives. The tree's seasonal changes, from vibrant green leaves in spring to golden hues in autumn, mark the passage of time and create a deep bond between the family and their surroundings.",
+        "As the family gathers around the large north-facing window, they feel a profound connection to nature and to each other. Whether enjoying a morning cup of coffee or watching the sunset in the evening, the window serves as a constant reminder of the beauty and resilience of the natural world, enriching their lives in ways they never imagined.",
+        "The house features three bedrooms, ingeniously distributed to optimize space and privacy. Ascending above the car parking level, a mezzanine bedroom offers a private space, overlooking the verdant landscape from a balcony in the front. Natural light floods into the interiors through large windows and skylights, complemented by the captivating play of shadows cast by pergolas and foliage, creating an ever-changing tapestry of light and shade.",
+        "Cross ventilation channels fresh air throughout, enhancing the sense of vitality and well-being within the home. Rooftop ventilation facilitates the escape of hot air, ensuring comfort even in the heat of summer. Additionally, a west-facing wall adorned with glass blocks ensures that even as the sun sets, the house is bathed in a beautiful ambient light, providing the perfect atmosphere for the clients to unwind and enjoy their cherished moments.",
+      ],
+      conclusion: "This home represents a harmonious dialogue between built form and natural context, where every architectural decision reinforces the family's connection to their environment and to each other.",
+      images: [
+        { src: brickHouse01, alt: "Brick House - Mezzanine volume extends outwards on the northern side" },
+        { src: brickHouse02, alt: "Brick House - West-facing blank wall envelops exposed brick volume" },
+        { src: brickHouse03, alt: "Brick House - House nestled within the local existing vegetation" },
+        { src: brickHouse04, alt: "Brick House - Mezzanine volume cantilevers outward on north side" },
+        { src: brickHouse05, alt: "Brick House - The play of built volumes with the existing site vegetation" },
+        { src: brickHouse06, alt: "Brick House - Entrance view with cantilevered volume" },
+        { src: brickHouse07, alt: "Brick House - Central staircase court filled with filtered natural light" },
+        { src: brickHouse08, alt: "Brick House - Staircase court with glass block windows" },
+        { src: brickHouse09, alt: "Brick House - Split levels inside the house" },
+        { src: brickHouse10, alt: "Brick House - Skylights creating everchanging play of shadows" },
       ],
     },
   ];
