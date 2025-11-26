@@ -49,9 +49,6 @@ const Header = () => {
                 <DropdownMenuItem onClick={() => scrollToSection("awards")} className="cursor-pointer">
                   AWARDS
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("people")} className="cursor-pointer">
-                  PEOPLE
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <button
@@ -101,12 +98,6 @@ const Header = () => {
                 className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
               >
                 AWARDS
-              </button>
-              <button
-                onClick={() => scrollToSection("people")}
-                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
-              >
-                PEOPLE
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
