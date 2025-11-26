@@ -1,6 +1,12 @@
 import { useState } from "react";
-import { Menu, X, Instagram } from "lucide-react";
+import { Menu, X, Instagram, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,29 +32,28 @@ const Header = () => {
 
           <nav className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection("about")}
-              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
-            >
-              ABOUT
-            </button>
-            <button
               onClick={() => scrollToSection("projects")}
               className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
             >
               PROJECTS
             </button>
-            <button
-              onClick={() => scrollToSection("awards")}
-              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
-            >
-              AWARDS
-            </button>
-            <button
-              onClick={() => scrollToSection("people")}
-              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
-            >
-              PEOPLE
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-light tracking-wide hover:opacity-70 transition-opacity outline-none">
+                STUDIO
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-40">
+                <DropdownMenuItem onClick={() => scrollToSection("about")} className="cursor-pointer">
+                  ABOUT
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("awards")} className="cursor-pointer">
+                  AWARDS
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => scrollToSection("people")} className="cursor-pointer">
+                  PEOPLE
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
@@ -79,26 +84,27 @@ const Header = () => {
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               <button
-                onClick={() => scrollToSection("about")}
-                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
-              >
-                ABOUT
-              </button>
-              <button
                 onClick={() => scrollToSection("projects")}
                 className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
               >
                 PROJECTS
               </button>
+              <div className="text-sm font-light tracking-wide text-left opacity-50">STUDIO</div>
+              <button
+                onClick={() => scrollToSection("about")}
+                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
+              >
+                ABOUT
+              </button>
               <button
                 onClick={() => scrollToSection("awards")}
-                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
+                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
               >
                 AWARDS
               </button>
               <button
                 onClick={() => scrollToSection("people")}
-                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
+                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
               >
                 PEOPLE
               </button>
