@@ -7,10 +7,44 @@ import stoneWoodLight from "@/assets/projects/stone-wood-light.jpg";
 import theFramedBlue from "@/assets/projects/the-framed-blue.jpg";
 import throughLine from "@/assets/projects/through-line.jpg";
 import tracesOfCalm from "@/assets/projects/traces-of-calm.jpg";
+import nHouse01 from "@/assets/projects/n-house-01.jpg";
+import nHouse02 from "@/assets/projects/n-house-02.jpg";
+import nHouse03 from "@/assets/projects/n-house-03.jpg";
+import nHouse04 from "@/assets/projects/n-house-04.jpg";
+import nHouse05 from "@/assets/projects/n-house-05.jpg";
+import nHouse07 from "@/assets/projects/n-house-07.jpg";
+import nHouse08 from "@/assets/projects/n-house-08.jpg";
+import nHouse09 from "@/assets/projects/n-house-09.jpg";
+import nHouse10 from "@/assets/projects/n-house-10.jpg";
+import nHouse13 from "@/assets/projects/n-house-13.jpg";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Projects = () => {
   const projects = [
+    {
+      id: "n-house",
+      title: "N House",
+      subtitle: "A Contemporary Residence in Chennai",
+      description: [
+        "N House stands as a testament to contemporary residential architecture in the heart of Chennai. The design embraces a dialogue between traditional brick masonry and modern architectural elements, creating a distinctive presence in its urban context.",
+        "The three-story residence features exposed brick facades that pay homage to Chennai's architectural heritage while incorporating clean, minimalist lines that define contemporary design. Large windows and glass balustrades allow natural light to permeate the interior spaces while maintaining visual connections with the surroundings.",
+        "The interior spaces are characterized by their simplicity and functionality. Natural light floods through strategically placed openings, creating dynamic patterns throughout the day. The material palette is deliberately restrained—polished floors, clean white walls, and warm wooden accents create a serene backdrop for daily life.",
+        "Each floor is designed to maximize space efficiency while maintaining a sense of openness. The living areas feature custom-designed furniture and built-in storage solutions that complement the architectural language. The use of natural materials like wood and stone adds warmth and texture to the minimalist interior.",
+      ],
+      conclusion: "N House represents a harmonious balance between traditional materials and contemporary design principles, creating a modern family home that is both functional and aesthetically refined.",
+      images: [
+        { src: nHouse01, alt: "N House - Front Elevation" },
+        { src: nHouse02, alt: "N House - Exterior View" },
+        { src: nHouse03, alt: "N House - Side Elevation" },
+        { src: nHouse04, alt: "N House - Architectural Detail" },
+        { src: nHouse05, alt: "N House - Balcony Detail" },
+        { src: nHouse07, alt: "N House - Balcony View" },
+        { src: nHouse08, alt: "N House - Living Room" },
+        { src: nHouse09, alt: "N House - Living Space" },
+        { src: nHouse10, alt: "N House - Living Area with TV" },
+        { src: nHouse13, alt: "N House - Interior View" },
+      ],
+    },
     {
       id: "home-in-the-sky",
       title: "A Home in the Sky",
@@ -46,8 +80,17 @@ const Projects = () => {
         <Accordion type="single" collapsible className="w-full space-y-8">
           {projects.map((project) => (
             <AccordionItem key={project.id} value={project.id} className="border-none">
-              <AccordionTrigger className="text-xl sm:text-2xl font-light hover:no-underline py-6 border-t border-border hover:opacity-70 transition-opacity">
-                {project.title}
+              <AccordionTrigger className="group text-xl sm:text-2xl font-light hover:no-underline py-0 border-t border-border transition-opacity">
+                <div className="flex items-center gap-6 w-full py-6">
+                  <div className="w-32 h-20 sm:w-40 sm:h-24 flex-shrink-0 overflow-hidden bg-muted">
+                    <img
+                      src={project.images[0].src}
+                      alt={project.images[0].alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <span className="group-hover:opacity-70 transition-opacity">{project.title}</span>
+                </div>
               </AccordionTrigger>
               <AccordionContent className="pt-8">
                 <div className="space-y-16">
