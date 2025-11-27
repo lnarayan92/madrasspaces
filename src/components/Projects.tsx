@@ -36,6 +36,11 @@ import house8706 from "@/assets/projects/87-house-06.jpg";
 import house8707 from "@/assets/projects/87-house-07.jpg";
 import house8708 from "@/assets/projects/87-house-08.jpg";
 import house8709 from "@/assets/projects/87-house-09.jpg";
+import house8710 from "@/assets/projects/87-house-10.jpg";
+import house8711 from "@/assets/projects/87-house-11.jpg";
+import house8712 from "@/assets/projects/87-house-12.jpg";
+import house8713 from "@/assets/projects/87-house-13.jpg";
+import house8714 from "@/assets/projects/87-house-14.gif";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Projects = () => {
@@ -128,6 +133,7 @@ const Projects = () => {
       ],
       conclusion: "This residence stands as a testament to the power of minimalist architecture to create profound connections between inhabitants and their environment, where every element serves to amplify the experience of light, space, and tranquility.",
       images: [
+        { src: house8712, alt: "01 87 House - Section Drawing" },
         { src: house8701, alt: "01 87 House - Exterior View" },
         { src: house8702, alt: "01 87 House - Architectural Detail" },
         { src: house8703, alt: "01 87 House - Skylight Detail" },
@@ -137,6 +143,10 @@ const Projects = () => {
         { src: house8707, alt: "01 87 House - Kitchen Area" },
         { src: house8708, alt: "01 87 House - Art Display" },
         { src: house8709, alt: "01 87 House - Corridor View" },
+        { src: house8710, alt: "01 87 House - Ground Floor Plan" },
+        { src: house8711, alt: "01 87 House - First Floor Plan" },
+        { src: house8713, alt: "01 87 House - Site Plan" },
+        { src: house8714, alt: "01 87 House - Massing Diagram" },
       ],
     },
   ];
