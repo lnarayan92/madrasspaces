@@ -41,6 +41,7 @@ import house8711 from "@/assets/projects/87-house-11.jpg";
 import house8712 from "@/assets/projects/87-house-12.jpg";
 import house8713 from "@/assets/projects/87-house-13.jpg";
 import house8714 from "@/assets/projects/87-house-14.gif";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 
 const Projects = () => {
@@ -156,66 +157,75 @@ const Projects = () => {
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mb-16 tracking-tight">Projects</h2>
 
-        <div className="space-y-32">
+        <Accordion type="single" collapsible className="w-full space-y-6">
           {projects.map((project) => (
-            <article key={project.id} className="border-t border-border pt-16 first:border-t-0 first:pt-0">
-              {/* Project Title */}
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-8 tracking-tight">
-                {project.title}
-              </h3>
-
-              <div className="space-y-16">
-                {/* Hero Image */}
-                <div className="w-full aspect-[16/9] overflow-hidden bg-muted">
-                  <img
-                    src={project.images[0].src}
-                    alt={project.images[0].alt}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+            <AccordionItem key={project.id} value={project.id} className="border border-border overflow-hidden">
+              <AccordionTrigger className="group text-xl sm:text-2xl font-light hover:no-underline px-6 py-4 hover:bg-muted/50 transition-colors [&[data-state=open]>div>svg]:rotate-180">
+                <div className="flex items-center gap-6 w-full">
+                  <div className="w-24 h-16 sm:w-32 sm:h-20 flex-shrink-0 overflow-hidden bg-muted">
+                    <img
+                      src={project.images[0].src}
+                      alt={project.images[0].alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <span className="text-left flex-1">{project.title}</span>
                 </div>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-8">
+                <div className="space-y-16 pt-8">
+                  {/* Hero Image */}
+                  <div className="w-full aspect-[16/9] overflow-hidden bg-muted">
+                    <img
+                      src={project.images[0].src}
+                      alt={project.images[0].alt}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
 
-                {/* Subtitle */}
-                <div className="max-w-2xl">
-                  <p className="text-lg sm:text-xl text-muted-foreground font-light italic">
-                    {project.subtitle}
-                  </p>
-                </div>
+                  {/* Subtitle */}
+                  <div className="max-w-2xl">
+                    <p className="text-lg sm:text-xl text-muted-foreground font-light italic">
+                      {project.subtitle}
+                    </p>
+                  </div>
 
-                {/* Description */}
-                <div className="max-w-3xl space-y-6 text-muted-foreground font-light leading-relaxed">
-                  {project.description.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
-                </div>
+                  {/* Description */}
+                  <div className="max-w-3xl space-y-6 text-muted-foreground font-light leading-relaxed">
+                    {project.description.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
 
-                {/* Image Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-                  {project.images.slice(1).map((image, index) => (
-                    <div
-                      key={index}
-                      className="aspect-[4/3] overflow-hidden bg-muted group cursor-pointer"
-                    >
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
+                  {/* Image Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                    {project.images.slice(1).map((image, index) => (
+                      <div
+                        key={index}
+                        className="aspect-[4/3] overflow-hidden bg-muted group cursor-pointer"
+                      >
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
+                    ))}
+                  </div>
 
-                {/* Conclusion */}
-                <div className="max-w-3xl pt-8 border-t border-border">
-                  <p className="text-muted-foreground font-light leading-relaxed italic">
-                    {project.conclusion}
-                  </p>
+                  {/* Conclusion */}
+                  <div className="max-w-3xl pt-8 border-t border-border">
+                    <p className="text-muted-foreground font-light leading-relaxed italic">
+                      {project.conclusion}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
       </div>
     </section>
   );
