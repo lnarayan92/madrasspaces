@@ -7,6 +7,7 @@ import stoneWoodLight from "@/assets/projects/stone-wood-light.jpg";
 import theFramedBlue from "@/assets/projects/the-framed-blue.jpg";
 import throughLine from "@/assets/projects/through-line.jpg";
 import tracesOfCalm from "@/assets/projects/traces-of-calm.jpg";
+import nHouse00 from "@/assets/projects/n-house-00.jpg";
 import nHouse01 from "@/assets/projects/n-house-01.jpg";
 import nHouse02 from "@/assets/projects/n-house-02.jpg";
 import nHouse03 from "@/assets/projects/n-house-03.jpg";
@@ -48,7 +49,7 @@ const Projects = () => {
   const projects = [
     {
       id: "n-house",
-      title: "N House",
+      title: "01 061 House",
       subtitle: "A Contemporary Residence in Chennai",
       description: [
         "N House stands as a testament to contemporary residential architecture in the heart of Chennai. The design embraces a dialogue between traditional brick masonry and modern architectural elements, creating a distinctive presence in its urban context.",
@@ -58,21 +59,22 @@ const Projects = () => {
       ],
       conclusion: "N House represents a harmonious balance between traditional materials and contemporary design principles, creating a modern family home that is both functional and aesthetically refined.",
       images: [
-        { src: nHouse01, alt: "N House - Front Elevation" },
-        { src: nHouse02, alt: "N House - Exterior View" },
-        { src: nHouse03, alt: "N House - Side Elevation" },
-        { src: nHouse04, alt: "N House - Architectural Detail" },
-        { src: nHouse05, alt: "N House - Balcony Detail" },
-        { src: nHouse07, alt: "N House - Balcony View" },
-        { src: nHouse08, alt: "N House - Living Room" },
-        { src: nHouse09, alt: "N House - Living Space" },
-        { src: nHouse10, alt: "N House - Living Area with TV" },
-        { src: nHouse13, alt: "N House - Interior View" },
+        { src: nHouse00, alt: "01 061 House - Ideation Sketch" },
+        { src: nHouse01, alt: "01 061 House - Front Elevation" },
+        { src: nHouse02, alt: "01 061 House - Exterior View" },
+        { src: nHouse03, alt: "01 061 House - Side Elevation" },
+        { src: nHouse04, alt: "01 061 House - Architectural Detail" },
+        { src: nHouse05, alt: "01 061 House - Balcony Detail" },
+        { src: nHouse07, alt: "01 061 House - Balcony View" },
+        { src: nHouse08, alt: "01 061 House - Living Room" },
+        { src: nHouse09, alt: "01 061 House - Living Space" },
+        { src: nHouse10, alt: "01 061 House - Living Area with TV" },
+        { src: nHouse13, alt: "01 061 House - Interior View" },
       ],
     },
     {
       id: "home-in-the-sky",
-      title: "A Home in the Sky",
+      title: "T 12 C 16",
       subtitle: "Finding Stillness above the City",
       description: [
         "In the layered, ever-expanding skyline of Chennai, where residential towers rise above the urgency of daily life, Madras Spaces has crafted an apartment that offers something increasingly rare—stillness. Perched high above the ground, this home is not about amplifying altitude or chasing views; instead, it is a retreat from them—a spatial pause amidst the city's vertical rush.",
@@ -97,7 +99,7 @@ const Projects = () => {
     },
     {
       id: "brick-house",
-      title: "Brick House",
+      title: "01 203 House",
       subtitle: "A Sanctuary of Tranquility in Chennai's Outskirts",
       description: [
         "Nestled on a tight plot measuring 60'x40' in the outskirts of Chennai, Tamil Nadu, this 3BHK home stands as a testament to thoughtful design and the enduring harmony between nature and architecture. Designed to cater to the needs of a young couple, their child, and cherished pets, it offers a sanctuary of tranquility amidst the bustling urban life.",
@@ -110,16 +112,16 @@ const Projects = () => {
       ],
       conclusion: "This home represents a harmonious dialogue between built form and natural context, where every architectural decision reinforces the family's connection to their environment and to each other.",
       images: [
-        { src: brickHouse01, alt: "Brick House - Mezzanine volume extends outwards on the northern side" },
-        { src: brickHouse02, alt: "Brick House - West-facing blank wall envelops exposed brick volume" },
-        { src: brickHouse03, alt: "Brick House - House nestled within the local existing vegetation" },
-        { src: brickHouse04, alt: "Brick House - Mezzanine volume cantilevers outward on north side" },
-        { src: brickHouse05, alt: "Brick House - The play of built volumes with the existing site vegetation" },
-        { src: brickHouse06, alt: "Brick House - Entrance view with cantilevered volume" },
-        { src: brickHouse07, alt: "Brick House - Central staircase court filled with filtered natural light" },
-        { src: brickHouse08, alt: "Brick House - Staircase court with glass block windows" },
-        { src: brickHouse09, alt: "Brick House - Split levels inside the house" },
-        { src: brickHouse10, alt: "Brick House - Skylights creating everchanging play of shadows" },
+        { src: brickHouse01, alt: "01 203 House - Mezzanine volume extends outwards on the northern side" },
+        { src: brickHouse02, alt: "01 203 House - West-facing blank wall envelops exposed brick volume" },
+        { src: brickHouse03, alt: "01 203 House - House nestled within the local existing vegetation" },
+        { src: brickHouse04, alt: "01 203 House - Mezzanine volume cantilevers outward on north side" },
+        { src: brickHouse05, alt: "01 203 House - The play of built volumes with the existing site vegetation" },
+        { src: brickHouse06, alt: "01 203 House - Entrance view with cantilevered volume" },
+        { src: brickHouse07, alt: "01 203 House - Central staircase court filled with filtered natural light" },
+        { src: brickHouse08, alt: "01 203 House - Staircase court with glass block windows" },
+        { src: brickHouse09, alt: "01 203 House - Split levels inside the house" },
+        { src: brickHouse10, alt: "01 203 House - Skylights creating everchanging play of shadows" },
       ],
     },
     {
