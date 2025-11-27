@@ -27,6 +27,15 @@ import brickHouse07 from "@/assets/projects/brick-house-07.jpg";
 import brickHouse08 from "@/assets/projects/brick-house-08.jpg";
 import brickHouse09 from "@/assets/projects/brick-house-09.jpg";
 import brickHouse10 from "@/assets/projects/brick-house-10.jpg";
+import house8701 from "@/assets/projects/87-house-01.jpg";
+import house8702 from "@/assets/projects/87-house-02.jpg";
+import house8703 from "@/assets/projects/87-house-03.jpg";
+import house8704 from "@/assets/projects/87-house-04.jpg";
+import house8705 from "@/assets/projects/87-house-05.jpg";
+import house8706 from "@/assets/projects/87-house-06.jpg";
+import house8707 from "@/assets/projects/87-house-07.jpg";
+import house8708 from "@/assets/projects/87-house-08.jpg";
+import house8709 from "@/assets/projects/87-house-09.jpg";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Projects = () => {
@@ -69,10 +78,10 @@ const Projects = () => {
       ],
       conclusion: "In a city where the line between exterior chaos and interior calm is increasingly blurred, this home draws a gentle distinction. It doesn't deny its context; it resists it quietly. What emerges is a space that sits in the sky but feels grounded—textural, quiet, and complete.",
       images: [
+        { src: constructedStillness, alt: "Constructed Stillness - Material composition" },
         { src: aMeasuredQuiet, alt: "A Measured Quiet - Interior view" },
         { src: axisThroughTexture, alt: "Axis Through Texture - Architectural detail" },
         { src: composedInSilence, alt: "Composed in Silence - Living space" },
-        { src: constructedStillness, alt: "Constructed Stillness - Material composition" },
         { src: softEdges, alt: "Soft Edges - Spatial flow" },
         { src: stoneWoodLight, alt: "Stone Wood Light - Material palette" },
         { src: theFramedBlue, alt: "The Framed Blue - View perspective" },
@@ -105,6 +114,29 @@ const Projects = () => {
         { src: brickHouse08, alt: "Brick House - Staircase court with glass block windows" },
         { src: brickHouse09, alt: "Brick House - Split levels inside the house" },
         { src: brickHouse10, alt: "Brick House - Skylights creating everchanging play of shadows" },
+      ],
+    },
+    {
+      id: "87-house",
+      title: "01 87 House",
+      subtitle: "Residence of Light and Stillness",
+      description: [
+        "Conceived on a slender strip of land surrounded by dense built fabric, this residence turns inward, searching for light and silence within. Like shafts of sun piercing through a forest canopy, daylight here enters from above — softened, filtered, and held in stillness. It drifts across rooms, stitching together a seamless flow of spaces, each moment marked by a different hue of light.",
+        "At the heart of the house, two courtyards breathe. Each carries its own temperament: one quiet and shaded, like a grove at dawn; the other open and luminous, like midday skies. A pool of calm water, edged with rocks unearthed from the very site, anchors the home. Its still surface reflects not only the sky above but also the tranquil rhythm of living inside.",
+        "In the warm and humid climate of Tamil Nadu, the courts act as lungs, drawing air and light deep into the home. Skylights, like openings between clouds, release the harshness of the sun, leaving only its softened glow.",
+        "The architecture is pared back, almost ascetic — a vessel that allows nature to write its own poetry in light, air, and shadow. Minimal yet soulful, the home embodies a lifestyle of restraint and calm. More than shelter, it is imagined as a sanctuary where stillness is not the absence of sound, but the quiet presence of light and water.",
+      ],
+      conclusion: "This residence stands as a testament to the power of minimalist architecture to create profound connections between inhabitants and their environment, where every element serves to amplify the experience of light, space, and tranquility.",
+      images: [
+        { src: house8701, alt: "01 87 House - Exterior View" },
+        { src: house8702, alt: "01 87 House - Architectural Detail" },
+        { src: house8703, alt: "01 87 House - Skylight Detail" },
+        { src: house8704, alt: "01 87 House - Interior Courtyard" },
+        { src: house8705, alt: "01 87 House - Living Space" },
+        { src: house8706, alt: "01 87 House - Staircase Design" },
+        { src: house8707, alt: "01 87 House - Kitchen Area" },
+        { src: house8708, alt: "01 87 House - Art Display" },
+        { src: house8709, alt: "01 87 House - Corridor View" },
       ],
     },
   ];

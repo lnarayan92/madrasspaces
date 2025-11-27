@@ -7,13 +7,16 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl font-light mb-6 tracking-tight">About Madras Spaces</h2>
             <div className="space-y-4 text-muted-foreground font-light leading-relaxed">
               <p>
-                Madras Spaces is a dynamic architectural design studio based in Chennai, transcending geographical boundaries and embodying a global design vision.
+                Madras Spaces is a dynamic architectural design studio based in Chennai—rooted locally yet driven by a global design vision.
               </p>
               <p>
-                We are committed to creative excellence, approaching each project with an open-ended and unwavering dedication to delivering innovative and thoughtful design solutions.
+                We are committed to creative excellence, approaching every project with openness, intent, and an unwavering pursuit of thoughtful, innovative solutions.
               </p>
               <p>
-                Our journey embodies a comprehensive approach that spans from concept sketches to immersive 3D visualizations, providing a complete suite of 2D and 3D services.
+                Our process spans the entire spectrum, from concept sketches to immersive 3D visualizations, offering a comprehensive suite of both 2D and 3D services.
+              </p>
+              <p>
+                We also provide end-to-end project management for execution, ensuring a seamless, single-point contact experience for our clients.
               </p>
             </div>
           </div>
