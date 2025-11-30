@@ -51,9 +51,13 @@ export interface ProjectImage {
   alt: string;
 }
 
+export type ProjectStatus = "Ongoing" | "Completed" | "Unbuilt";
+
 export interface Project {
   id: string;
   title: string;
+  secondaryName: string;
+  status: ProjectStatus;
   subtitle: string;
   description: string[];
   conclusion: string;
@@ -64,6 +68,8 @@ export const projects: Project[] = [
   {
     id: "01-061-house",
     title: "01 061 House",
+    secondaryName: "A Contemporary Residence in Chennai",
+    status: "Completed",
     subtitle: "A Contemporary Residence in Chennai",
     description: [
       "N House stands as a testament to contemporary residential architecture in the heart of Chennai. The design embraces a dialogue between traditional brick masonry and modern architectural elements, creating a distinctive presence in its urban context.",
@@ -89,6 +95,8 @@ export const projects: Project[] = [
   {
     id: "t-12-c-16",
     title: "T 12 C 16",
+    secondaryName: "Finding Stillness above the City",
+    status: "Completed",
     subtitle: "Finding Stillness above the City",
     description: [
       "In the layered, ever-expanding skyline of Chennai, where residential towers rise above the urgency of daily life, Madras Spaces has crafted an apartment that offers something increasingly rare—stillness. Perched high above the ground, this home is not about amplifying altitude or chasing views; instead, it is a retreat from them—a spatial pause amidst the city's vertical rush.",
@@ -114,6 +122,8 @@ export const projects: Project[] = [
   {
     id: "01-203-house",
     title: "01 203 House",
+    secondaryName: "A Sanctuary of Tranquility in Chennai's Outskirts",
+    status: "Completed",
     subtitle: "A Sanctuary of Tranquility in Chennai's Outskirts",
     description: [
       "Nestled on a tight plot measuring 60'x40' in the outskirts of Chennai, Tamil Nadu, this 3BHK home stands as a testament to thoughtful design and the enduring harmony between nature and architecture. Designed to cater to the needs of a young couple, their child, and cherished pets, it offers a sanctuary of tranquility amidst the bustling urban life.",
@@ -140,7 +150,9 @@ export const projects: Project[] = [
   },
   {
     id: "01-87-house",
-    title: "01 87 House",
+    title: "House of Stillness",
+    secondaryName: "Residence of Light and Stillness",
+    status: "Ongoing",
     subtitle: "Residence of Light and Stillness",
     description: [
       "Conceived on a slender strip of land surrounded by dense built fabric, this residence turns inward, searching for light and silence within. Like shafts of sun piercing through a forest canopy, daylight here enters from above — softened, filtered, and held in stillness. It drifts across rooms, stitching together a seamless flow of spaces, each moment marked by a different hue of light.",

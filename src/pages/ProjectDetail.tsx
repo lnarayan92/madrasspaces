@@ -48,11 +48,14 @@ const ProjectDetail = () => {
 
         {/* Project Header */}
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight mb-4">
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+            {project.status}
+          </p>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight mb-2">
             {project.title}
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground font-light italic">
-            {project.subtitle}
+          <p className="text-lg sm:text-xl text-muted-foreground font-light">
+            {project.secondaryName}
           </p>
         </div>
 
