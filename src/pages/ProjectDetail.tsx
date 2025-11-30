@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import { getProjectById } from "@/data/projects";
@@ -6,6 +7,11 @@ import { getProjectById } from "@/data/projects";
 const ProjectDetail = () => {
   const { projectId } = useParams<{ projectId: string }>();
   const project = projectId ? getProjectById(projectId) : undefined;
+
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [projectId]);
 
   if (!project) {
     return (
@@ -51,7 +57,7 @@ const ProjectDetail = () => {
         </div>
 
         {/* Vertical Image Scroll */}
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-6">
           {project.images.map((image, index) => (
             <div
               key={index}
