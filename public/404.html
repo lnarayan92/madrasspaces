@@ -4,15 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Redirecting…</title>
-    <meta http-equiv="refresh" content="0; url=/madrasspaces/" />
     <script>
-      // SPA redirect: send any 404 back to index for React Router
-      const path = window.location.pathname;
-      const search = window.location.search || "";
-      const hash = window.location.hash || "";
-      const target = "/madrasspaces/" + (path.replace(/^\/madrasspaces\//, "") || "") + search + hash;
-      // Replace to avoid extra entry in history
-      window.location.replace(target);
+      // Only run on GitHub Pages (hostname ends with github.io)
+      if (/github\.io$/.test(window.location.hostname)) {
+        const path = window.location.pathname;
+        const search = window.location.search || "";
+        const hash = window.location.hash || "";
+        const base = "/madrasspaces/";
+        const relative = path.replace(/^\/madrasspaces\//, "");
+        const target = base + relative + search + hash;
+        window.location.replace(target);
+      }
     </script>
   </head>
   <body>
