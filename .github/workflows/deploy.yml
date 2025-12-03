@@ -26,8 +26,8 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Build (custom domain base path)
+        run: npm run build -- --base=/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
