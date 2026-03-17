@@ -1,13 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,22 +36,23 @@ const Header = () => {
 
           <nav className="hidden md:flex items-center gap-8">
             <button
+              onClick={() => scrollToSection("about")}
+              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
+            >
+              STUDIO
+            </button>
+            <button
               onClick={() => scrollToSection("projects")}
               className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
             >
               PROJECTS
             </button>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-light tracking-wide hover:opacity-70 transition-opacity outline-none">
-                STUDIO
-                <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-40">
-                <DropdownMenuItem onClick={() => scrollToSection("about")} className="cursor-pointer">
-                  ABOUT
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <button
+              onClick={() => scrollToSection("competitions")}
+              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
+            >
+              COMPETITIONS
+            </button>
             <button
               onClick={() => scrollToSection("contact")}
               className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
@@ -80,17 +75,22 @@ const Header = () => {
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               <button
+                onClick={() => scrollToSection("about")}
+                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
+              >
+                STUDIO
+              </button>
+              <button
                 onClick={() => scrollToSection("projects")}
                 className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
               >
                 PROJECTS
               </button>
-              <div className="text-sm font-light tracking-wide text-left opacity-50">STUDIO</div>
               <button
-                onClick={() => scrollToSection("about")}
-                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
+                onClick={() => scrollToSection("competitions")}
+                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left"
               >
-                ABOUT
+                COMPETITIONS
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

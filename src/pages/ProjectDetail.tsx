@@ -52,11 +52,34 @@ const ProjectDetail = () => {
             {project.status}
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight mb-2">
-            {project.title}
-          </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground font-light">
             {project.secondaryName}
-          </p>
+          </h1>
+        </div>
+
+        {/* Basic Info Section */}
+        <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-sm">
+            <div>
+              <p className="text-muted-foreground mb-1">Year</p>
+              <p className="font-light">{project.basicInfo.year}</p>
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-1">Location</p>
+              <p className="font-light">{project.basicInfo.location}</p>
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-1">Type</p>
+              <p className="font-light">{project.basicInfo.type}</p>
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-1">Status</p>
+              <p className="font-light">{project.basicInfo.status}</p>
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-1">Photographers</p>
+              <p className="font-light">{project.basicInfo.photographers}</p>
+            </div>
+          </div>
         </div>
 
         {/* Vertical Image Scroll */}
@@ -86,11 +109,13 @@ const ProjectDetail = () => {
           </div>
 
           {/* Conclusion */}
-          <div className="mt-12 pt-8 border-t border-border">
-            <p className="text-muted-foreground font-light leading-relaxed italic">
-              {project.conclusion}
-            </p>
-          </div>
+          {project.conclusion && (
+            <div className="mt-12 pt-8 border-t border-border">
+              <p className="text-muted-foreground font-light leading-relaxed italic">
+                {project.conclusion}
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Back to Projects */}
