@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Menu, X, Instagram, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -56,9 +56,6 @@ const Header = () => {
                 <DropdownMenuItem onClick={() => scrollToSection("about")} className="cursor-pointer">
                   ABOUT
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("awards")} className="cursor-pointer">
-                  AWARDS
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <button
@@ -67,14 +64,6 @@ const Header = () => {
             >
               CONTACT
             </button>
-            <a
-              href="https://www.instagram.com/madras_spaces/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity"
-            >
-              <Instagram className="h-5 w-5" />
-            </a>
           </nav>
 
           <Button
@@ -102,12 +91,6 @@ const Header = () => {
                 className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
               >
                 ABOUT
-              </button>
-              <button
-                onClick={() => scrollToSection("awards")}
-                className="text-sm font-light tracking-wide hover:opacity-70 transition-opacity text-left pl-4"
-              >
-                AWARDS
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

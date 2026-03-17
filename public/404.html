@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <script>
+      // Only run on GitHub Pages (hostname ends with github.io)
+      if (/github\.io$/.test(window.location.hostname)) {
+        const path = window.location.pathname;
+        const search = window.location.search || "";
+        const hash = window.location.hash || "";
+        const base = "/madrasspaces/";
+        const relative = path.replace(/^\/madrasspaces\//, "");
+        const target = base + relative + search + hash;
+        window.location.replace(target);
+      }
+    </script>
+  </head>
+  <body>
+    Redirecting…
+  </body>
+</html>

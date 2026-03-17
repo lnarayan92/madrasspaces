@@ -50,15 +50,39 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## Tech Stack
 
-This project is built with:
+- **Language:** TypeScript
+- **Framework:** React 18
+- **Dev Server/Build:** Vite 5 with `@vitejs/plugin-react-swc`
+- **Routing:** `react-router-dom`
+- **Data Fetching:** `@tanstack/react-query`
+- **Styling:** Tailwind CSS 3, PostCSS, Autoprefixer
+- **UI Primitives:** Radix UI (`@radix-ui/react-*`) + shadcn/ui patterns
+- **Icons:** `lucide-react`
+- **Forms & Validation:** `react-hook-form`, `zod`, `@hookform/resolvers`
+- **Components/UX:** `embla-carousel-react`, `recharts`, `react-day-picker`, `date-fns`, `react-resizable-panels`, `cmdk`, `vaul`, `sonner`
+- **Utilities:** `clsx`, `class-variance-authority`, `tailwind-merge`
+- **Theming:** `next-themes` (class-based dark/light)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Architecture Overview
+
+- **Entry:** `src/main.tsx` mounts the app and sets up router.
+- **Routing:** `react-router-dom` drives navigation between `src/pages`.
+- **Pages:** High-level views in `src/pages/` (`Index.tsx`, `ProjectDetail.tsx`, `NotFound.tsx`).
+- **Components:** Reusable UI under `src/components/` including Radix-driven shadcn components in `src/components/ui/`.
+- **Data:** Async state and caching via React Query; local UI state in components.
+- **Styling:** Tailwind with custom theme tokens defined in CSS variables and `tailwind.config.ts`.
+- **Aliases:** `@` resolves to `src/` (see `vite.config.ts`).
+
+## Useful Commands
+
+```sh
+npm run dev         # start dev server
+npm run build       # production build
+npm run preview     # preview built assets
+npm run lint        # lint project
+```
 
 ## How can I deploy this project?
 

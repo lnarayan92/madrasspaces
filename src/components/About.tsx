@@ -35,17 +35,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        
-        <div className="mt-16 grid grid-cols-2 gap-8 text-center max-w-md mx-auto">
-          <div>
-            <p className="text-3xl sm:text-4xl font-light mb-2">2022</p>
-            <p className="text-sm text-muted-foreground">Founded</p>
-          </div>
-          <div>
-            <p className="text-3xl sm:text-4xl font-light mb-2">Chennai</p>
-            <p className="text-sm text-muted-foreground">Home</p>
-          </div>
-        </div>
       </div>
     </section>
   );
