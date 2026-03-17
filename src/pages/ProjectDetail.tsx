@@ -38,7 +38,7 @@ const ProjectDetail = () => {
         {/* Back Link */}
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
           <Link
-            to="/#projects"
+            to={`/#project-tile-${project.id}`}
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -83,7 +83,7 @@ const ProjectDetail = () => {
         </div>
 
         {/* Vertical Image Scroll */}
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-6">
+        <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 space-y-4 sm:space-y-6">
           {project.images.map((image, index) => (
             <div
               key={index}
@@ -121,7 +121,7 @@ const ProjectDetail = () => {
         {/* Back to Projects */}
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pb-20">
           <Link
-            to="/#projects"
+            to={`/#project-tile-${project.id}`}
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
           >
             <ArrowLeft className="h-4 w-4" />

@@ -69,7 +69,22 @@ import anbilFarm7 from "@/assets/projects/anbil-farm-house/7.jpg";
 import anbilFarm8 from "@/assets/projects/anbil-farm-house/8.jpg";
 import anbilFarm9 from "@/assets/projects/anbil-farm-house/9.jpg";
 
-// Project 7: BARNABY OFFICE
+// Project 7: 087 HOUSE
+import house087_01 from "@/assets/projects/087-house/01.jpg";
+import house087_02 from "@/assets/projects/087-house/02.jpg";
+import house087_03 from "@/assets/projects/087-house/03.jpg";
+import house087_04 from "@/assets/projects/087-house/04.jpg";
+import house087_05 from "@/assets/projects/087-house/05.jpg";
+import house087_06 from "@/assets/projects/087-house/06.jpg";
+import house087_07 from "@/assets/projects/087-house/07.jpg";
+import house087_08 from "@/assets/projects/087-house/08.jpg";
+import house087_09 from "@/assets/projects/087-house/09.jpg";
+import house087_10 from "@/assets/projects/087-house/10.jpg";
+import house087_11 from "@/assets/projects/087-house/11.jpg";
+import house087_12 from "@/assets/projects/087-house/12.jpg";
+import house087_13 from "@/assets/projects/087-house/13.gif";
+
+// Project 8: BARNABY OFFICE
 import barnaby0 from "@/assets/projects/barnaby-office/0.jpeg";
 import barnaby1 from "@/assets/projects/barnaby-office/1.png";
 import barnaby2 from "@/assets/projects/barnaby-office/2.png";
@@ -342,6 +357,40 @@ export const projects: Project[] = [
       { src: anbilFarm7, alt: "Anbil Farm House - Landscape connection" },
       { src: anbilFarm8, alt: "Anbil Farm House - Material expression" },
       { src: anbilFarm9, alt: "Anbil Farm House - Rural architecture" },
+    ],
+  },
+  {
+    id: "087-house",
+    title: "0 087 HOUSE", // NAME 01 for homepage
+    secondaryName: "Residence of Light and Stillness", // NAME 02 for project detail page
+    basicInfo: {
+      year: "2023",
+      location: "Chennai, Tamil Nadu, India",
+      type: "Residential",
+      status: "Unbuilt",
+      photographers: "NA"
+    },
+    status: "Unbuilt",
+    description: [
+      "Conceived on a slender strip of land surrounded by dense built fabric, this residence turns inward, searching for light and silence within. Like shafts of sun piercing through a forest canopy, daylight here enters from above — softened, filtered, and held in stillness. It drifts across rooms, stitching together a seamless flow of spaces, each moment marked by a different hue of light.",
+      "At the heart of the house, two courtyards breathe. Each carries its own temperament: one quiet and shaded, like a grove at dawn; the other open and luminous, like midday skies. A pool of calm water, edged with rocks unearthed from the very site, anchors the home. Its still surface reflects not only the sky above but also the tranquil rhythm of living inside.",
+      "In the warm and humid climate of Tamil Nadu, the courts act as lungs, drawing air and light deep into the home. Skylights, like openings between clouds, release the harshness of the sun, leaving only its softened glow.",
+      "The architecture is pared back, almost ascetic — a vessel that allows nature to write its own poetry in light, air, and shadow. Minimal yet soulful, the home embodies a lifestyle of restraint and calm. More than shelter, it is imagined as a sanctuary where stillness is not the absence of sound, but the quiet presence of light and water."
+    ],
+    images: [
+      { src: house087_01, alt: "087 House - Conceptual view" },
+      { src: house087_02, alt: "087 House - Courtyard with natural light" },
+      { src: house087_03, alt: "087 House - Interior space with skylights" },
+      { src: house087_04, alt: "087 House - Pool and water feature" },
+      { src: house087_05, alt: "087 House - Shaded courtyard area" },
+      { src: house087_06, alt: "087 House - Light filtration detail" },
+      { src: house087_07, alt: "087 House - Minimal interior design" },
+      { src: house087_08, alt: "087 House - Architectural shadows" },
+      { src: house087_09, alt: "087 House - Zen-like atmosphere" },
+      { src: house087_10, alt: "087 House - Stone and water integration" },
+      { src: house087_11, alt: "087 House - Peaceful living space" },
+      { src: house087_12, alt: "087 House - Light and shadow play" },
+      { src: house087_13, alt: "087 House - Design process animation" },
     ],
   },
   {
